@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Product from "./Product";
-import { connect } from "react-redux";
 
 class Products extends Component {
   showProducts(products) {
@@ -26,17 +25,4 @@ class Products extends Component {
   }
 }
 
-const mapStateProps = state => {
-  return {
-    products: state.products
-  };
-};
-
-const mapDispatchToProps = (dispatch, props) => {
-  return {};
-};
-
-export default connect(
-  mapStateProps,
-  mapDispatchToProps
-)(Products);
+export default Products;
